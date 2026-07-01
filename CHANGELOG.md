@@ -3,6 +3,12 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v3.0.1](https://github.com/material-extensions/svg-icon-review/compare/v3.0.0...v3.0.1) 
+
+> July 1, 2026 
+
+- fix: vulnerabilities and update dependencies [`9d8af76`](https://github.com/material-extensions/svg-icon-review/commit/9d8af76)
+ 
 #### [v3.0.0](https://github.com/material-extensions/svg-icon-review/compare/v2.2.0...v3.0.0) 
 
 > July 1, 2026 
