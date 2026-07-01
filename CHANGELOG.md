@@ -3,6 +3,12 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v3.0.0](https://github.com/material-extensions/svg-icon-review/compare/v2.2.0...v3.0.0) 
+
+> July 1, 2026 
+
+- chore: migrate to Node 24 [`4ea0574`](https://github.com/material-extensions/svg-icon-review/commit/4ea0574)
+ 
 #### [v2.2.0](https://github.com/material-extensions/svg-icon-review/compare/v2.1.0...v2.2.0) 
 
 > January 21, 2025 
