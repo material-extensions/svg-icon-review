@@ -1,2 +1,2 @@
-export * from './theme.js';
 export * from './config.js';
+export * from './theme.js';
