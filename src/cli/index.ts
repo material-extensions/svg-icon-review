@@ -1,9 +1,9 @@
 import minimist from 'minimist';
-import { Config } from '../core';
-import { printHelp } from './commands/printHelp';
-import { printResults } from './commands/printResults';
-import { printVersion } from './commands/printVersion';
-import { CliFlags, flags } from './config/flags';
+import { Config } from '../core/index.js';
+import { printHelp } from './commands/printHelp.js';
+import { printResults } from './commands/printResults.js';
+import { printVersion } from './commands/printVersion.js';
+import { CliFlags, flags } from './config/flags.js';
 
 const run = async () => {
   const args = minimist<Partial<CliFlags & Config>>(

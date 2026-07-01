@@ -1,5 +1,5 @@
 import minimist from 'minimist';
-import { Config } from '../../core';
+import { Config } from '../../core/index.js';
 
 export type CliFlags = {
   version?: boolean;

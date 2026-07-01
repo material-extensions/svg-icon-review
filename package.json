@@ -2,6 +2,7 @@
   "name": "svg-icon-review",
   "displayName": "SVG Icon Review",
   "version": "2.2.0",
+  "type": "module",
   "description": "Tool to review SVG icons automatically",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
@@ -9,14 +10,14 @@
     "svg-icon-review": "./bin/cli.js"
   },
   "scripts": {
-    "start": "bun ./bin/cli.js *.svg",
-    "build:watch": "bun run build -- --watch",
+    "start": "node ./bin/cli.js *.svg",
+    "build:watch": "npm run build -- --watch",
     "build": "tsc -p tsconfig.json",
-    "lint": "bunx --bun @biomejs/biome check --write ./src",
-    "format": "bunx --bun @biomejs/biome format --write ./src",
-    "changelog": "bunx --bun changelog-machine --config changelog.config.json",
-    "prepublish": "bun run build",
-    "version": "bun run changelog && git add CHANGELOG.md"
+    "lint": "npx @biomejs/biome check --write ./src",
+    "format": "npx @biomejs/biome format --write ./src",
+    "changelog": "npx changelog-machine --config changelog.config.json",
+    "prepublish": "npm run build",
+    "version": "npm run changelog && git add CHANGELOG.md"
   },
   "files": [
     "lib/"
@@ -28,7 +29,7 @@
     "CLI"
   ],
   "engines": {
-    "bun": ">=1.1.17"
+    "node": ">=24"
   },
   "author": {
     "name": "Material Extensions",

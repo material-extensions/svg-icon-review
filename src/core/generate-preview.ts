@@ -1,9 +1,13 @@
 import { writeFileSync } from 'node:fs';
-import { basename, join, resolve } from 'node:path';
-import { green, red } from '../cli/utils';
-import { Config, Theme } from './models';
-import { previewStyles } from './styles';
-import { createScreenshot } from './utils/screenshot';
+import { basename, dirname, join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { green, red } from '../cli/utils/index.js';
+import { Config, Theme } from './models/index.js';
+import { previewStyles } from './styles.js';
+import { createScreenshot } from './utils/screenshot.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 /**
  * Generates a preview of dark and light theme of SVG icons.

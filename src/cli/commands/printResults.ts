@@ -1,7 +1,7 @@
 import { glob } from 'glob';
 import isGlob from 'is-glob';
-import { Config, generatePreview } from '../../core';
-import { printHelp } from './printHelp';
+import { Config, generatePreview } from '../../core/index.js';
+import { printHelp } from './printHelp.js';
 
 const printResults = async (filePatterns: string[], config: Config) => {
   const iconFileNames = [];

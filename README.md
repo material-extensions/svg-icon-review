@@ -14,13 +14,13 @@
 The tool can be executed with this command:
 
 ```
-bunx svg-icon-review file1.svg file2.svg
+npx svg-icon-review file1.svg file2.svg
 ```
 
 It also supports glob file patterns to check multiple files matching the pattern like this:
 
 ```
-bunx svg-icon-review ./images/**/*.svg
+npx svg-icon-review ./images/**/*.svg
 ```
 
 The output is a preview of how the icons look in either dark or light backgrounds:
@@ -34,7 +34,7 @@ The output is a preview of how the icons look in either dark or light background
 Optionally, an additional bigger icon (in size of 32x32px) will be shown in front of the preview. This is useful to see the icon in more detail. This can be done by adding the `--bigIcon` option like this:
 
 ```bash
-bunx svg-icon-review --bigIcon file1.svg file2.svg
+npx svg-icon-review --bigIcon file1.svg file2.svg
 ```
 
 The preview will look like this:
@@ -46,7 +46,7 @@ The preview will look like this:
 By default, the tool will output a result message to the console. If you want to avoid this output, you can use the `--silent` option:
 
 ```bash
-bunx svg-icon-review --silent file1.svg file2.svg
+npx svg-icon-review --silent file1.svg file2.svg
 ```
 
 ### `--debug`
@@ -54,7 +54,7 @@ bunx svg-icon-review --silent file1.svg file2.svg
 If you want to see the debug information, you can use the `--debug` option:
 
 ```bash
-bunx svg-icon-review --debug file1.svg file2.svg
+npx svg-icon-review --debug file1.svg file2.svg
 ```
 
 ### `--noSandbox`
@@ -62,7 +62,7 @@ bunx svg-icon-review --debug file1.svg file2.svg
 By default, the tool uses a sandboxed environment to render the SVG icons. If you want to disable this sandbox, you can use the `--noSandbox` option:
 
 ```bash
-bunx svg-icon-review --noSandbox file1.svg file2.svg
+npx svg-icon-review --noSandbox file1.svg file2.svg
 ```
 
 Running without a sandbox is strongly discouraged because of security risks. Consider configuring a sandbox instead. If you absolutely trust the content you with this tool, you can launch it with the --noSandbox argument.
@@ -72,23 +72,21 @@ Running without a sandbox is strongly discouraged because of security risks. Con
 If further help is needed, the `--help` option can be used:
 
 ```bash
-bunx svg-icon-review --help
+npx svg-icon-review --help
 ```
-
-> Instead of "bunx" you can use "npx" if you prefer Node.js.
 
 ## Development
 
-For the development of this tool, Bun.js is used. First you have to install the dependencies:
+First you have to install the dependencies:
 
 ```bash
-bun install
+npm install
 ```
 
 Then you can run the tool with:
 
 ```bash
-bun run start
+npm run start
 ```
 
 It is going to create a preview image of the logo.svg file in the root directory.
@@ -98,11 +96,11 @@ It is going to create a preview image of the logo.svg file in the root directory
 To format the code, run:
 
 ```bash
-bun run format
+npm run format
 ```
 
 To lint the code, run:
 
 ```bash
-bun run lint
+npm run lint
 ```

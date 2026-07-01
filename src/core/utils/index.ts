@@ -1,1 +1,1 @@
-export * from './screenshot';
+export * from './screenshot.js';
